@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .primary-font {
+            font-family: "Mulish", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="primary-font">
+    <header class="mt-7 mx-12 md:mt-14 md:mx-16 lg:mx-32">
+        <!-- Nav Bar -->
+        <nav class="flex justify-between items-center">
+            <div>
+                <h3 class="text-[#12132D] text-4xl font-black cursor-pointer">ReTro</h3>
+            </div>
+            <div class="hidden md:flex gap-6">
+                <ul class="flex items-center gap-3">
+                    <li>
+                        <div class="tooltip" data-tip="Home"><button class="btn btn-circle h-14 w-14"><img
+                                    src="images/home.png" alt=""></button></div>
+                    </li>
+                    <li>
+                        <div class="tooltip" data-tip="Write"><button class="btn btn-circle h-14 w-14"><img
+                                    src="images/ContenWirte.png" alt=""></button></div>
+                    </li>
+                    <li>
+                        <div class="tooltip" data-tip="Add People"><button class="btn btn-circle h-14 w-14"><img
+                                    src="images/AddPeople.png" alt=""></button></div>
+                    </li>
+                    <li>
+                        <div class="tooltip" data-tip="Flag"><button class="btn btn-circle h-14 w-14"><img
+                                    src="images/flag.png" alt=""></button></div>
+                    </li>
+                </ul>
+                <button
+                    class="btn rounded-[50px] text-nowrap text-[#FFF] text-xl font-bold px-10 py-6 bg-[#797DFC]">Sign
+                    In</button>
+            </div>
+            <div id="navbar-btn" class="md:hidden">
+                <button
+                    class="btn btn-circle hover:bg-[#797DFC] hover:text-white active:text-white active:bg-[#797DFC] w-14 h-14">
+                    <ion-icon name="menu-outline" size="large"></ion-icon>
+                </button>
+            </div>
+            <div id="dropdown-menu" class="md:hidden absolute w-full -top-full left-0 ">
+                <ul class="flex flex-col gap-5">
+                    <li class="text-xl font-medium text-center hover:text-[#797DFC] active:text-[#797DFC]">Home</li>
+                    <li class="text-xl font-medium text-center hover:text-[#797DFC] active:text-[#797DFC]">Write Content</li>
+                    <li class="text-xl font-medium text-center hover:text-[#797DFC] active:text-[#797DFC]">Add People</li>
+                    <li class="text-xl font-medium text-center hover:text-[#797DFC] active:text-[#797DFC]">Flag</li>
+                </ul>
+                <div class="flex items-center justify-center mt-5">
+                    <button
+                    class="btn rounded-[50px] text-nowrap text-[#FFF] text-xl font-bold px-10 py-6 bg-[#797DFC]">Sign
+                    In</button>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+
+    <script src="JS/navbar.js"></script>
+</body>
+
+</html>
