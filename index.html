@@ -21,7 +21,7 @@
 </head>
 
 <body class="primary-font">
-    <header class="mt-7 mx-12 md:mt-14 md:mx-16 lg:mx-32">
+    <header class="mt-7 mx-6 md:mt-14 md:mx-16 lg:mx-32">
         <!-- Nav Bar -->
         <nav class="flex justify-between items-center">
             <div>
@@ -56,21 +56,62 @@
                     <ion-icon name="menu-outline" size="large"></ion-icon>
                 </button>
             </div>
-            <div id="dropdown-menu" class="md:hidden absolute w-full -top-full left-0 ">
+            <div id="dropdown-menu" class="md:hidden absolute w-full -top-full left-0 bg-white">
                 <ul class="flex flex-col gap-5">
                     <li class="text-xl font-medium text-center hover:text-[#797DFC] active:text-[#797DFC]">Home</li>
-                    <li class="text-xl font-medium text-center hover:text-[#797DFC] active:text-[#797DFC]">Write Content</li>
-                    <li class="text-xl font-medium text-center hover:text-[#797DFC] active:text-[#797DFC]">Add People</li>
+                    <li class="text-xl font-medium text-center hover:text-[#797DFC] active:text-[#797DFC]">Write Content
+                    </li>
+                    <li class="text-xl font-medium text-center hover:text-[#797DFC] active:text-[#797DFC]">Add People
+                    </li>
                     <li class="text-xl font-medium text-center hover:text-[#797DFC] active:text-[#797DFC]">Flag</li>
                 </ul>
                 <div class="flex items-center justify-center mt-5">
                     <button
-                    class="btn rounded-[50px] text-nowrap text-[#FFF] text-xl font-bold px-10 py-6 bg-[#797DFC]">Sign
-                    In</button>
+                        class="btn rounded-[50px] text-nowrap text-[#FFF] text-xl font-bold px-10 py-6 bg-[#797DFC]">Sign
+                        In</button>
                 </div>
             </div>
         </nav>
-        
+
+        <!-- intro banner section -->
+
+        <section class="bg-[url('images/bgbanner.png')] bg-cover bg-center rounded-[32px] mt-14 bg-[#12132D]">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-16 py-16 md:py-16 lg:py-36 px-14 lg:px-28">
+                <div>
+                    <h3 class="text-white text-5xl md:text-6xl font-black text-wrap mb-5">Welcome to the <br> <span
+                            class="bg-gradient-to-r from-[#797DFC] to-[#797DFC60] bg-clip-text text-transparent">ReTro</span>
+                        Forum</h3>
+                    <p class="text-[#FFFFFFCC] text-xl font-medium text-wrap mb-8">Share your favorite opinion and win and wp
+                        forum coffee mug!</p>
+                    <div class="flex flex-col md:flex-row bg-white p-1 justify-between items-center gap-4 md:rounded-[50px] rounded-lg">
+                        <input
+                            class="bg-white rounded-[50px] w-full p-5 border-none text-[#03071280] text-base font-medium"
+                            type="text" placeholder="Search here anything">
+                        <button
+                            class="bg-[#797DFC] rounded-[46px] text-[#FFF] text-xl font-bold text-nowrap px-7 py-4">Search</button>
+                    </div>
+                </div>
+                <div class="bg-[#FFF] rounded-[32px] p-4 md:p-12">
+                    <div class="flex justify-between items-center gap-4">
+                        <p class="text-[#12132DCC] text-2xl font-medium text-nowrap">Registered Users</p>
+                        <p class="text-[#12132DCC] text-2xl font-medium">01</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <p class="text-[#12132DCC] text-2xl font-medium">Forum</p>
+                        <p class="text-[#12132DCC] text-2xl font-medium">05</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <p class="text-[#12132DCC] text-2xl font-medium">Topics</p>
+                        <p class="text-[#12132DCC] text-2xl font-medium">01</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <p class="text-[#12132DCC] text-2xl font-medium">Replies</p>
+                        <p class="text-[#12132DCC] text-2xl font-medium">01</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </header>
 
 
