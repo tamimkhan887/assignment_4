@@ -88,10 +88,10 @@
                         forum coffee mug!</p>
                     <div
                         class="flex flex-col md:flex-row bg-white p-1 justify-between items-center gap-4 md:rounded-[50px] rounded-lg">
-                        <input
+                        <input id="input-field"
                             class="bg-white rounded-[50px] w-full p-5 border-none text-[#03071280] text-base font-medium"
                             type="text" placeholder="Search here anything">
-                        <button
+                        <button id="input-btn"
                             class="bg-[#797DFC] rounded-[46px] text-[#FFF] text-xl font-bold text-nowrap px-7 py-4">Search</button>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
 
     </header>
 
-    <main>
+    <main class="container mx-auto">
         <!-- Discuss Section -->
         <section class="mt-12 md:mt-24 mx-6 md:mx-16 lg:mx-32 ">
             <h3 class="text-[#12132D] font-black text-4xl text-center mb-6">Let's Discuss</h3>
@@ -141,24 +141,75 @@
                         <h3 class="text-[#12132D] text-xl font-bold">Title of the post and watch time</h3>
                         <div class="flex gap-2">
                             <img src="images/Frame.svg" alt="">
-                            <p class="text-[#12132D99] font-normal text-base text-nowrap">Mark as read (<span id="mark-count">0</span>)
+                            <p class="text-[#12132D99] font-normal text-base text-nowrap">Mark as read (<span
+                                    id="mark-count">0</span>)
                             </p>
                         </div>
                     </div>
 
                     <div id="mark-container">
-                        
+
                     </div>
                 </div>
             </div>
         </section>
 
 
+        <!-- join our forum -->
+
+
+        <section
+            class="bg-[#12132D] rounded-[32px] flex flex-col lg:flex-row justify-between items-center mx-6 md:mx-16 lg:mx-32 mt-28 p-24 mb-32 gap-24 lg:gap-0">
+            <div>
+                <h3 class="text-[#FFF] font-black text-4xl mb-4">Join Our Forum</h3>
+                <p class="text-[#FFFFFFCC] font-medium text-lg mb-8">Share your favorite opinion and win and wp forum
+                    coffee mug! Yes, you can run unit tests and view the results directly within the app.</p>
+                <button
+                    class="btn bg-[#797DFC] border-none rounded-[50px] text-[#FFF] text-xl font-bold px-10 py-5 text-nowrap">Registered
+                    Now</button>
+            </div>
+            <div>
+                <img src="images/joinforum.png" alt="">
+            </div>
+
+        </section>
+
+
+        <!-- Latest Post Section and APi Cart-->
+        <section class="mx-6 md:mx-16 lg:mx-32">
+            <div class="mb-12">
+                <h3 class="text-[#12132D] font-black text-4xl text-center mb-6">Latest post</h3>
+                <p class="text-[#12132D99] text-lg font-normal text-center text-wrap">Yes, you can run unit tests and
+                    view the results directly within the app. The integrated testing features allow for a streamlined .
+                </p>
+            </div>
+            <div id="latestPostContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            </div>
+        </section>
+
+
+
     </main>
+
+
+
+    <footer class="mt-24 bg-linear-to-r from-[#12132D0D] to-[#12132D00] pt-24 pb-24">
+        <div>
+            <h3 class="text-[#12132D] font-black text-4xl text-center mb-4">ReTro</h3>
+            <p class="text-[#12132DB2] text-base font-normal text-center mb-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a <br class="hidden lg:flex"> piece of classical Latin literature from 45 BC</p>
+        </div>
+        <div class="flex justify-center items-center mb-12">
+            <img src="images/Social.svg" alt="">
+        </div>
+        <hr class="border-[#30325E1A] mb-12 mx-32">
+        <p class="text-[#12132D80] font-light text-base text-center">2017, All Rights Reserved.</p>
+    </footer>
 
 
     <script src="JS/navbar.js"></script>
     <script src="JS/style.js"></script>
+    <script src="JS/latest.js"></script>
 </body>
 
 </html>
