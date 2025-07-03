@@ -7,10 +7,12 @@ const loadData = async () => {
 
 const singlePost = (posts) => {
     const divContainer = document.getElementById("div-container");
+
     for (const post of posts) {
         const div = document.createElement("div");
+        div.classList.add(`${post.category}`);
         div.innerHTML = `
-        <div class="bg-[#F3F3F5] hover:bg-[#797DFC1A] rounded-3xl hover:border hover:border-[#797DFC] p-10 flex flex-col md:flex-row gap-6 mb-6">
+        <div class="bg-[#F3F3F5] hover:bg-[#797DFC1A] rounded-3xl hover:border hover:border-[#797DFC] p-10 flex flex-col md:flex-row gap-6 ">
             <div class="relative p-6 bg-[#f4f4ff]">
                 <img src="${post.image}" alt="Example" class="rounded-2xl md:h-24 md:w-24" />
                 <div class="activeStatus absolute top-5 right-5 w-4 h-4 rounded-full"></div>
@@ -82,6 +84,34 @@ const markAsRead = (post) =>{
     markCountPerse++;
     document.getElementById("mark-count").innerText = markCountPerse ;
 }
+
+const inputBtn = document.getElementById("input-btn"); 
+const inputField = document.getElementById("input-field");
+const divContainer = document.getElementById("div-container");
+
+function inBtn() {
+    const divCon = document.querySelector(".div-con");
+    for (let child of divCon.children) {
+        console.log(child.classList[0]);
+        if (inputField.value === child.classList[0]) {
+            child.classList.remove("hidden");
+        } else if (inputField.value === "") {
+            child.classList.remove("hidden");
+        } else {
+            child.classList.add("hidden");
+        }
+    }
+    divContainer.scrollIntoView({ behavior: "smooth" });
+}
+
+inputBtn.addEventListener("click", inBtn);
+
+inputField.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        inBtn();
+    }
+});
+
 
 
 loadData();
